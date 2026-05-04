@@ -34,7 +34,7 @@ export const Founder: React.FC = () => {
           >
             <div className="glow-border aspect-[3/4] bg-card rounded-2xl relative overflow-hidden group">
               <img
-                src="/justin-zhan.png"
+                src="/justin-zhan.jpg"
                 alt={t.founder.name}
                 className="absolute inset-0 w-full h-full object-cover object-[center_20%] scale-105 group-hover:scale-110 transition-transform duration-700"
               />
