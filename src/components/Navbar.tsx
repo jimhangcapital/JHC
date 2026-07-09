@@ -19,6 +19,7 @@ export const Navbar: React.FC = () => {
     { href: "#focus", label: t.nav.focus },
     { href: "#platform", label: t.nav.platform },
     { href: "#program", label: t.nav.program },
+    { href: "#vibe-coding", label: t.nav.vibeCoding },
     { href: "#about", label: t.nav.about },
     { href: "#contact", label: t.nav.contact },
   ];

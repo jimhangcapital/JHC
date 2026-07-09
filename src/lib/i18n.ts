@@ -8,6 +8,7 @@ export const translations = {
       program: "创业营",
       insights: "湾区瞻势",
       about: "关于",
+      vibeCoding: "Vibe Coding",
       contact: "提交 BP"
     },
     hero: {
@@ -121,6 +122,39 @@ export const translations = {
         "望尘科技 02458.HK 独立非执行董事"
       ]
     },
+    vibeCoding: {
+      title: "作为 AI-Native VC，我也亲手写代码",
+      intro: "投资人应当理解创业者在做什么。Vibe Coding 是我用 AI 编程工具亲手完成的一批小作品——从想法到上线，去感受这个时代的开发者手感：模型能力边界在哪、多模态生成的成本结构如何、创业者面对的工程摩擦又是什么。每一个项目都是一次实证。",
+      projects: [
+        {
+          slug: "poetry",
+          chapter: "Chapter 02 · Education × AIGC",
+          title: "诗境 · 沉浸式学古诗",
+          desc: "用 Doubao Seedream 生成意境画面、Seedance 合成 5 秒短片、macOS TTS 朗诵，让每一句古诗从静止的文字化为流动的画面与声音。三首中小学教材经典 + 每首 5 题知识测验。",
+          tags: ["Seedream", "Seedance", "TTS", "K-12"],
+          coverImage: "/poetry/assets/images/hero.jpeg",
+          cta: "进入诗境"
+        },
+        {
+          slug: "parallel-world-cup",
+          chapter: "Chapter 01 · Game × Fandom",
+          title: "平行世界杯",
+          desc: "48 队灵感、球星剧情、动图式比赛、朋友圈战报——选一支球队进入另一个宇宙的美加墨世界杯，球迷声浪会提高你的球队夺冠概率，但命运不会完全听话。",
+          tags: ["Simulation", "Storytelling", "Shareable"],
+          coverImage: "",
+          cta: "开一个宇宙"
+        }
+      ],
+      quote: "「一个真正理解 AI 时代的投资人，应该能亲手用 Cursor / Claude Code 把一个 idea 从零跑到线上——哪怕只是一个周末的小项目。这是我的最小勇气。」",
+      whyTitle: "为什么我要做这些",
+      reasons: [
+        "用最短的路径感受当代开发者与创业者的真实工程手感",
+        "把 AI 生成能力（图片 / 视频 / 语音）在真实产品里跑一遍",
+        "给被投企业与创业者一份「能听懂你」的信号",
+        "保持对第一线技术的手感与好奇"
+      ],
+      viewSource: "View Source on GitHub"
+    },
     contact: {
       title: "让我们看看你正在改变什么",
       subtitle: "如果你的项目正在 AI、机器人、硬科技、智能硬件、未来消费或出海方向创造真实增量，欢迎提交 BP。",
@@ -163,6 +197,7 @@ export const translations = {
       program: "Founder Program",
       insights: "Insights",
       about: "About",
+      vibeCoding: "Vibe Coding",
       contact: "Submit Deck"
     },
     hero: {
@@ -275,6 +310,39 @@ export const translations = {
         "GDAST Haizhi Expert",
         "Madhead 02458.HK INED"
       ]
+    },
+    vibeCoding: {
+      title: "As an AI-Native VC, I code with my own hands.",
+      intro: "Investors should understand what founders are actually building. Vibe Coding is a small collection of side projects I built end-to-end with AI coding tools — from idea to production — to feel the current builder experience: where model capabilities cap out, what the cost structure of multimodal generation really is, and what engineering friction founders face today. Each one is a small experiment.",
+      projects: [
+        {
+          slug: "poetry",
+          chapter: "Chapter 02 · Education × AIGC",
+          title: "Poetic Realms · Immersive Classical Chinese Poetry",
+          desc: "Doubao Seedream for atmospheric imagery, Seedance for 5-second clips, macOS TTS for recitation — turning each line of poetry from static text into flowing imagery and sound. Three K-12 textbook classics + a 5-question quiz per poem.",
+          tags: ["Seedream", "Seedance", "TTS", "K-12"],
+          coverImage: "/poetry/assets/images/hero.jpeg",
+          cta: "Enter the Realm"
+        },
+        {
+          slug: "parallel-world-cup",
+          chapter: "Chapter 01 · Game × Fandom",
+          title: "Parallel World Cup",
+          desc: "48 teams, star-driven storylines, GIF-style matches, shareable scorecards — pick a team and enter a parallel-universe North American World Cup, where fan roar raises your team's odds, but fate never fully listens.",
+          tags: ["Simulation", "Storytelling", "Shareable"],
+          coverImage: "",
+          cta: "Open a Universe"
+        }
+      ],
+      quote: "\"An investor who truly understands the AI era should be able to take an idea from zero to a live URL with Cursor or Claude Code — even if it's just a weekend project. This is my minimum courage.\"",
+      whyTitle: "Why I do this",
+      reasons: [
+        "Feel the real engineering texture of today's builders and founders in the shortest possible path",
+        "Actually ship a real product using AI generation (image / video / voice) end-to-end",
+        "Give portfolio companies and founders a signal that I speak their language",
+        "Stay curious and hands-on with frontier technology"
+      ],
+      viewSource: "View Source on GitHub"
     },
     contact: {
       title: "Show Us What You\u2019re Building.",

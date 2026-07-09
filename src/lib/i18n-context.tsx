@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, type ReactNode } from "react";
+import React, { createContext, useContext, useState, useCallback, type ReactNode } from "react";
 import { translations, type Language } from "./i18n";
 
 interface I18nContextType {
@@ -10,7 +10,16 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>("zh");
+  const [lang, setLangState] = useState<Language>(() => {
+    const saved = localStorage.getItem("jimhang-lang");
+    return saved === "zh" || saved === "en" ? saved : "zh";
+  });
+
+  const setLang = useCallback((newLang: Language) => {
+    setLangState(newLang);
+    localStorage.setItem("jimhang-lang", newLang);
+    document.documentElement.lang = newLang === "zh" ? "zh-CN" : "en";
+  }, []);
 
   const t = translations[lang];
 
