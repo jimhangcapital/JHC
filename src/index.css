@@ -57,6 +57,11 @@ html {
   100% { background-position: 0% 50%; }
 }
 
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
 .glow-border {
   position: relative;
 }
@@ -67,12 +72,19 @@ html {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(59,130,246,0.4), transparent, rgba(214,168,79,0.3));
+  background: linear-gradient(135deg, rgba(59,130,246,0.3), transparent 40%, transparent 60%, rgba(214,168,79,0.2));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+}
+
+.glow-border:hover::before {
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(59,130,246,0.5), transparent 30%, transparent 70%, rgba(214,168,79,0.3));
 }
 
 .glow-text {
@@ -85,12 +97,12 @@ html {
 
 .card-hover:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 60px -15px rgba(59, 130, 246, 0.2), 0 0 30px rgba(59, 130, 246, 0.05);
+  box-shadow: 0 20px 60px -15px rgba(59, 130, 246, 0.15), 0 0 40px rgba(59, 130, 246, 0.05);
 }
 
 .scifi-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(59,130,246,0.4), rgba(214,168,79,0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), rgba(214,168,79,0.2), transparent);
 }
 
 select option {
@@ -113,4 +125,9 @@ select option {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(59, 130, 246, 0.5);
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #F5F7FA;
 }
